@@ -1,0 +1,47 @@
+M and CCA variables
+Have the values of all the variables of X and Y of all three models 
+
+MBoot variable:
+Has the F value and weights of X and Y for each one of the models for each one of the boostraps.
+
+Boostrap_F_Distr_Models.png
+This is the histrogram with the distributions of Fs.
+Results of Model Comparinsons.
+Model1 = blue
+Model 2 - orange
+Model 3 - yellow
+(check new legend)
+
+
+compare_mod1_mod2
+compare_mod1_mod3
+compare_mod2_mod3
+have the stats for comparing models
+
+
+Scores of Model 2
+XS_model2
+YS_model2
+
+Loadings for Model 2
+XL_model2
+YL_model2
+XL_model2INV
+YL_model2INV
+
+Scores and Loadings of Model 1 and 3 also available
+
+
+corr_model1
+correlation between X and Y for each model
+
+
+==
+mlr
+has the result of the regression model
+
+model = 'ys_boot_model2 ~ xs_boot_model2 + age + quali';
+%model = 'ys_boot ~ xs_boot + age + quali_cat';
+mlr = fitlm(T,model)
+
+
